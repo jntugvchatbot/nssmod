@@ -3,7 +3,7 @@
 /* Slider container */
 .slider-container {
     width: 50%; /* Set width to half of the screen */
-    /* margin: 0 auto; */
+    margin: 0 auto;
   }
   
   /* Slide images */
@@ -71,6 +71,4 @@
   .slick-dots li.slick-active button {
     background-color: rgba(0, 0, 0, 0.7); /* Darker semi-transparent black */
   }
-  .image2{
-    width: 10%;
-  }
+  

@@ -2,10 +2,13 @@ import React from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-// import '../pages/Home.css';
+import NotificationBar from '../pages/NotificationBar'; // Import the NotificationBar component
+import NewsEvents from '../pages/NewsEvents'; // Import the NewsEvents component
 import image1 from '../assets/image1.jpg';
-import image2 from '../assets/image2.jpg';
+// import image2 from '../assets/image2.jpg';
 import image3 from '../assets/image3.jpg';
+import JntukNssTeam from './JntukNssTeam';
+import Notifications from './Notifications';
 
 const Home = () => {
   const settings = {
@@ -29,11 +32,17 @@ const Home = () => {
         <div>
           <img src={image3} alt="Slide 2" />
         </div>
-        <div >
+        {/* <div >
           <img src={image2} alt="Slide 3" />
-        </div>
+        </div> */}
         {/* Add more slides as needed */}
       </Slider>
+      <div>
+        <NotificationBar message="dsffhbsdjkvahvaldv" />
+        <NewsEvents />
+        <JntukNssTeam/>
+        <Notifications/>
+      </div>
     </div>
   );
 };
