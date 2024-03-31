@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Mobilefooter from '../components/Mobilefooter';
 const Downloads = () => {
   return (
     <div>
@@ -53,7 +53,9 @@ const Downloads = () => {
           </tr>
         </tbody>
       </table>
+      <Mobilefooter/>
     </div>
+    
   );
 };
 

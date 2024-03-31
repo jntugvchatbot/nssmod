@@ -1,18 +1,17 @@
 .container {
-    margin: 0 auto;
-    max-width: 800px;
-  }
-  
-  .section-header {
-    text-align: center;
-  }
-  
-  .about-container {
-    padding: 20px;
-  }
-  
-  .col-lg-0 {
-    flex: 0 0 100%;
-    max-width: 100%;
-  }
-  
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.section-header {
+  text-align: center;
+}
+
+.about-container {
+  padding: 10px;
+}
+
+.col-lg-0 {
+  flex: 0 0 100%;
+  max-width: 100%;
+}

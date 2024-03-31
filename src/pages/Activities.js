@@ -1,6 +1,7 @@
 // src/pages/Activities.js
 import React from 'react';
-
+import './Activities.css'; 
+import Mobilefooter from '../components/Mobilefooter';
 function Activities() {
   return (
     <div className='head-acc'>
@@ -340,7 +341,8 @@ function Activities() {
 </table>
 </figure>
         {/* Add more content as needed */}
-      </section>
+      </section><br></br><br></br>
+      <Mobilefooter />
     </div>
   );
 }
