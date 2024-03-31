@@ -1,6 +1,6 @@
 import React from 'react';
 // import './notifi.css';
-
+import './NewsEvents.css'
 const NewsEvents = () => {
   const newsEvents = [
     {

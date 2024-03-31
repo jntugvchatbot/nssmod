@@ -13,13 +13,13 @@ import Downloads from './pages/Downloads';
 import Login from './pages/Login';
 import ContactUs from './pages/ContactUs';
 import Notifications from './pages/Notifications';
-import JntukNssTeam from './pages/JntukNssTeam'; // Import the JntukNssUnitTeam component
+import JntukNssTeam from './pages/JntukNssTeam';
 
 function AppRouter() {
   return (
     <Router>
       <Header />
-      <NotificationBar message="dsffhbsdjkvahvaldv" />
+      <NotificationBar message="gbhbnkjlj jkn kj" />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<AboutUs />} />
@@ -31,8 +31,8 @@ function AppRouter() {
         <Route path="/login" element={<Login />} />
         <Route path="/contact" element={<ContactUs />} />
         <Route path="/notificationbar" element={<NotificationBar />} />
-        <Route path="/notifications" element={<Notifications />} /> {/* Add route for Notifications */}
-        <Route path="/jntuknssteam" element={<JntukNssTeam />} /> {/* Add route for JntukNssUnitTeam */}
+        <Route path="/notifications" element={<Notifications />} />
+        <Route path="/jntuknssteam" element={<JntukNssTeam />} />
         {/* Add more routes as needed */}
       </Routes>
     </Router>

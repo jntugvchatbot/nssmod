@@ -1,0 +1,18 @@
+/* Gallery.css */
+.gallery-container {
+  display: flex;
+  justify-content: center; /* Center the container horizontally */
+  align-items: center; /* Center the container vertically */
+  height: 100vh; /* Set the container height to full viewport height */
+}
+
+.slick-slide {
+  text-align: center; /* Center the images horizontally */
+}
+
+.slick-slide img {
+  width: 100%; /* Set width to auto to maintain aspect ratio */
+  max-height: 300px; /* Set the maximum height of the images to 300px */
+  padding-left: 2%;
+  padding-top: 5%;
+}

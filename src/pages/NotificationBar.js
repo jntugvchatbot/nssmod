@@ -1,12 +1,14 @@
 import React from 'react';
-// import './flashnot.css';
+import './NotificationBar.css';
 
-function NotificationBar({ message }) {
+function NotificationBar({ message, show }) {
   return (
-    <div className="notification-bar">
-      <div className="flash-highlight">Flash</div>
-      <div className="notification-text">{message}</div>
-    </div>
+    show && (
+      <div className="notification-bar">
+        <div className="flash-highlight">Flash</div>
+        <div className="notification-text">{message}</div>
+      </div>
+    )
   );
 }
 

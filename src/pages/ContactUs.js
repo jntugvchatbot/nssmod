@@ -1,13 +1,14 @@
 import React from 'react';
 import nsscord from '../assets/nsscord.jpg';
-import '../pages/ContactUs.css'; // Import CSS file if needed
+import '../pages/ContactUs.css'; 
+import Mobilefooter from '../components/Mobilefooter';
 
 function ContactUs() {
   return (
     <section>
       {/* <h2 style={{ textAlign: 'center' }}>Contact Us</h2> */}
       <h3 style={{ textAlign: 'center' }}><b>NSS Coordinator</b></h3>
-      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', marginTop: '50px' }}>
+      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', marginTop: '10px' }}>
         <img src={nsscord} alt="NSS Coordinator" height="200px" />
         <div style={{ textAlign: 'center' }}>
           <b><span style={{ fontSize: '1.25rem' }}>V.Mani Kumar</span></b><br />
@@ -31,6 +32,7 @@ function ContactUs() {
           </div>
         </header>
       </div>
+      <Mobilefooter/>
     </section>
   );
 }

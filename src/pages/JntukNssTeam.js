@@ -1,6 +1,6 @@
 import React from 'react';
 // import './notifi3.css'
-
+import './JntukNssTeam.css'
 const JntukNssTeam = () => {
   const teamMembers = [
     {

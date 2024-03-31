@@ -1,5 +1,7 @@
 // src/pages/AboutUs.js
 import React from 'react';
+import './AboutUs.css'; 
+import Mobilefooter from '../components/Mobilefooter';
 function AboutUs() {
   return (
     <div className='about'>
@@ -21,6 +23,7 @@ function AboutUs() {
           <p>NSS Unit of JNTU Gurajada University is providing services to the society almost from the inception of the institution under the JNTUGV NSS cell. All these years, various activities are conducted in the vizianagaram district by our young, committed and social responsible volunteers. Our NSS unit always strive hard to promote the social change in people of vizianagaram district by identifying the problems in the current society and finds the solutions and promote them in the society by conducting programmes.</p>
         {/* Add more content as needed */}
       </section>
+      <Mobilefooter />
     </div>
   );
 }

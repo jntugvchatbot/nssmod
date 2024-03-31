@@ -1,6 +1,6 @@
 import React from 'react';
 // import './notifi2.css'
-
+import './Notifications.css'
 const Notifications = () => {
   const notifications = [
     {
