@@ -5,11 +5,11 @@ const Notifications = () => {
   const notifications = [
     {
       date: '2024-01-20',
-      title: 'J. - N. - T. - University Kakinada - NSS - Cell - Deputation - of NCC - Volunteers.pdf',
+      title: 'J. - N. - T. -U Gurajada - NSS - Cell - Deputation - of NCC - Volunteers.pdf',
     },
     {
       date: '2024-01-03',
-      title: 'JNTUK - Kakinada - NSS Cell - Circular',
+      title: 'JNTUGV - Vizianagaram - NSS Cell - Circular',
     },
   ];
 

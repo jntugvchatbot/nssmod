@@ -1,18 +1,37 @@
 /* Gallery.css */
-.gallery-container {
-  display: flex;
-  justify-content: center; /* Center the container horizontally */
-  align-items: center; /* Center the container vertically */
-  height: 100vh; /* Set the container height to full viewport height */
+
+/* Gallery container styles */
+.gallery {
+  position: relative;
 }
 
-.slick-slide {
-  text-align: center; /* Center the images horizontally */
+.gallery-image {
+  width: 100%;
+  height: auto;
 }
 
+/* Position slick dots below images */
+.slick-dots {
+  position: absolute;
+  bottom: -40px; /* Adjust the distance from the bottom */
+  width: 100%;
+  text-align: center;
+}
+
+/* Add padding between images */
 .slick-slide img {
-  width: 100%; /* Set width to auto to maintain aspect ratio */
-  max-height: 300px; /* Set the maximum height of the images to 300px */
-  padding-left: 2%;
-  padding-top: 5%;
+  max-width: 100%;
+  max-height: 40vh; /* Using viewport height for responsive height */
+  padding: 0 15px;
+  padding-top: 3%;
+  width: 90%;
+}
+
+/* Add custom cursor styles */
+.cursor-default {
+  cursor: default;
+}
+
+.cursor-auto {
+  cursor: auto;
 }

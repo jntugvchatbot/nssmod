@@ -1,19 +1,26 @@
-// AppRouter.js
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './components/Header';
 import NotificationBar from './pages/NotificationBar';
 import Home from './pages/Home';
 import AboutUs from './pages/AboutUs';
-import Activities from './pages/Activities';
-import Team from './pages/Team';
-import NssUnit from './pages/NssUnit';
+import Activities from './pages/Activities/Activities';
+import Team from './pages/Team/Team';
+import NssUnit from './pages/Nss Unit/NssUnit';
 import Gallery from './pages/Gallery';
 import Downloads from './pages/Downloads';
 import Login from './pages/Login';
 import ContactUs from './pages/ContactUs';
 import Notifications from './pages/Notifications';
 import JntukNssTeam from './pages/JntukNssTeam';
+import Unit1 from './pages/Nss Unit/Unit1'; 
+import Unit2 from './pages/Nss Unit/Unit2';
+import SuggestiveListOfActivities from './pages/Activities/SuggestiveListOfActivities'; 
+import SpecialCampingPrograms from './pages/Activities/SpecialCampingProgrammes';
+import RegularActivities from './pages/Activities/RegularActivities';
+import ImportantDays from './pages/Activities/ImportantDays';
+import TeamMembers1 from './pages/Nss Unit/TeamMembers1';
+import TeamMembers2 from './pages/Nss Unit/TeamMembers2';
 
 function AppRouter() {
   return (
@@ -24,8 +31,16 @@ function AppRouter() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<AboutUs />} />
         <Route path="/activities" element={<Activities />} />
+        <Route path="/suggestiveListOfActivities" element={<SuggestiveListOfActivities />} /> 
+        <Route path="/SpecialCampingPrograms" element={<SpecialCampingPrograms/>}/>
+        <Route path="/RegularActivities" element={<RegularActivities/>}/>
+        <Route path="/ImportantDays" element={<ImportantDays/>}/>
         <Route path="/team" element={<Team />} />
-        <Route path="/nss-unit" element={<NssUnit />} />
+        <Route path="/nssunit" element={<NssUnit />} />
+        <Route path="/unit1" element={<Unit1 />} />
+        <Route path="/unit2" element={<Unit2 />} />
+        <Route path='TeamMembers1' element={<TeamMembers1/>}/>
+        <Route path='TeamMembers2' element={<TeamMembers2/>}/>
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/downloads" element={<Downloads />} />
         <Route path="/login" element={<Login />} />
