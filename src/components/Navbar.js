@@ -1,49 +1,57 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
+import { FaHome, FaInfo, FaUsers, FaImages, FaDownload, FaSignInAlt, FaPhoneAlt, FaAngleDown } from 'react-icons/fa'; // Import icons from Font Awesome
+import './Navbar.css';
 
-function Navbar() {
+const Navbar = () => {
+  const navigate = useNavigate();
+  const [showOptions, setShowOptions] = useState(false);
+
+  const handleChange = (option) => {
+    navigate(`/${option.toLowerCase().replace(/\s+/g, '')}`);
+    setShowOptions(false);
+  };
+
   return (
     <nav>
       <ul className="nav-list">
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/about">About Us</Link></li>
-        <li><Link to="/activities">Activities</Link></li>
-        <li><Link to="/team">Team</Link></li>
-        <li><Link to="/nss-unit">NSS Unit</Link></li>
-        <li><Link to="/gallery">Gallery</Link></li>
-        <li><Link to="/downloads">Downloads</Link></li>
-        <li><Link to="/login">Login</Link></li>
-        <li><Link to="/contact">Contact Us</Link></li>
+        <li><Link to="/"><FaHome /> Home</Link></li>
+        <li><Link to="/about"><FaInfo /> About Us</Link></li>
+        <li>
+          <div className="dropdown">
+            <button className="dropbtn" onClick={() => setShowOptions(!showOptions)}><FaUsers /> NSS Unit <FaAngleDown /></button>
+            {showOptions && (
+              <div className="dropdown-content">
+                <Link to="/unit1" onClick={() => handleChange('Unit 1')}>Unit 1</Link>
+                <Link to="/unit2" onClick={() => handleChange('Unit 2')}>Unit 2</Link>
+                {/* Add more options as needed */}
+              </div>
+            )}
+          </div>
+        </li>
+        <li>
+          <div className="dropdown">
+            <button className="dropbtn" onClick={() => setShowOptions(!showOptions)}><FaImages /> Activities <FaAngleDown /></button>
+            {showOptions && (
+              <div className="dropdown-content">
+                <Link to="/suggestiveListOfActivities" onClick={() => handleChange('Suggestive List Of Activities')}>Suggestive List Of Activities</Link>
+                <Link to="/SpecialCampingPrograms" onClick={() => handleChange('SpecialCampingPrograms')}>Special Camping Programs</Link>
+                <Link to="/RegularActivities" onClick={() => handleChange('Regular Activities')}>Regular Activities</Link>
+                <Link to="/ImportantDays" onClick={() => handleChange('Important Days')}>Important Days</Link>
+                {/* Add more options as needed */}
+              </div>
+            )}
+          </div>
+        </li>
+        <li><Link to="/team"><FaUsers /> Team</Link></li>
+        <li><Link to="/gallery"><FaImages /> Gallery</Link></li>
+        <li><Link to="/downloads"><FaDownload /> Downloads</Link></li>
+        <li><Link to="/login"><FaSignInAlt /> Login</Link></li>
+        <li><Link to="/contact"><FaPhoneAlt /> Contact Us</Link></li>
         {/* Add more navigation links as needed */}
       </ul>
     </nav>
   );
 }
 
-
 export default Navbar;
-
-// import React from 'react';
-// import { Link as ScrollLink } from 'react-scroll';
-
-// function Navbar() {
-//   return (
-//     <nav>
-//       <ul className="nav-list">
-//         <li><ScrollLink to="home" smooth={true} duration={500}>Home</ScrollLink></li>
-//         <li><ScrollLink to="about" smooth={true} duration={500}>About Us</ScrollLink></li>
-//         <li><ScrollLink to="activities" smooth={true} duration={500}>Activities</ScrollLink></li>
-//         <li><ScrollLink to="team" smooth={true} duration={500}>Team</ScrollLink></li>
-//         <li><ScrollLink to="nss-unit" smooth={true} duration={500}>NSS Unit</ScrollLink></li>
-//         <li><ScrollLink to="gallery" smooth={true} duration={500}>Gallery</ScrollLink></li>
-//         <li><ScrollLink to="downloads" smooth={true} duration={500}>Downloads</ScrollLink></li>
-//         <li><ScrollLink to="login" smooth={true} duration={500}>Login</ScrollLink></li>
-//         <li><ScrollLink to="contact" smooth={true} duration={500}>Contact Us</ScrollLink></li>
-//         {/* Add more navigation links as needed */}
-//       </ul>
-//     </nav>
-//   );
-// }
-
-// export default Navbar;
-
